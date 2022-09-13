@@ -1,3 +1,10 @@
+:root {
+    --sm-size: 576px;
+    --md-size: 768px;
+    --lg-size: 992px;
+    --xl-size: 1200px;
+}
+
 @media screen and (max-width: 576px) {
     section {
         display: flex;
