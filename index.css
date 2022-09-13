@@ -1,5 +1,9 @@
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
     section {
         display: flex;
+        flex-direction: column;
+    }
+    article {
+        flex-grow: 1;
     }
 }
