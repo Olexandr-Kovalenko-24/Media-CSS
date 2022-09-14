@@ -1,32 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
-@font-face {
-    font-family: "Ms_Madi";
-    src: url("./settings/Fonts/Ms_Madi/MsMadi-Regular.ttf") format("truetipe");
+.form {
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
 }
 
-h2 {
-    font-family: "Ms_Madi", cursive;
+.form input {
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
 }
-
-.wrapper {
-    width: 80%;
-    border: 1px solid black;
+h2, h4 {
+    margin: 10px;
 }
-
-.hack {
-    border: 1px solid red;
-    padding-top: calc(3/4*100%);
-    position: relative;
+.center {
+    text-align: center;
 }
-
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.dawn {
+    margin-top: 150px;
+}
+h2:first-child {
+    font-size: 24px;
+    font-weight: 600;
+}
+button {
+    background-color: darkorange;
+    border: 2px solid darkorange;
+    border-radius: 5px;
+    line-height: 2em;
+}
+input {
+    background-color: darkorange;
 }
