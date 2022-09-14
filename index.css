@@ -1,16 +1,9 @@
-:root {
-    --sm-size: 576px;
-    --md-size: 768px;
-    --lg-size: 992px;
-    --xl-size: 1200px;
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+@font-face {
+    font-family: "Ms_Madi";
+    src: url("./settings/Fonts/Ms_Madi/MsMadi-Regular.ttf") format("truetipe");
 }
 
-@media screen and (max-width: 576px) {
-    section {
-        display: flex;
-        flex-direction: column;
-    }
-    article {
-        flex-grow: 1;
-    }
+h2 {
+    font-family: "Ms_Madi", cursive;
 }
