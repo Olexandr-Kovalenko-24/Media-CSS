@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
     <title>Form (sign in)</title>
 </head>
 
 <body>
-    <div class="form">
-        <h2>Login</h2>
-        <h4>Welcome back please login to your account</h4>
-        <input type="text" name="user-name" placeholder="User Name" required />
-        <input type="password" name="password" placeholder="Password" required />
-        <div>
-            <input type="checkbox" />Remember me
-        </div>
-        <button>Login</button>
-        <h4 class="center">Forgot Password?</h4>
-        <h4 class="center dawn">Don`t have account? Signup</h4>
-    </div>
+    <section class="bg">
+        <form class="login-form">
+            <h2 class="login-header">Login</h2>
+            <h4 class="text">Welcome back please login to your account</h4>
+            <input class="input" type="text" name="user-name" placeholder="User Name" required />
+            <input class="input" type="password" name="password" placeholder="Password" required />
+            <label class="flex-row"><input type="checkbox" />Remember me</label>
+            <button class="logbut">Login</button>
+            <a class="center text">Forgot Password?</a>
+            <div class="dawn">
+                <h4 class="center text">Don`t have account?<a>Signup</a></h4>
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>

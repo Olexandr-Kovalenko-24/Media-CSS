@@ -1,39 +1,85 @@
-.form {
-    margin: 0 auto;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    background-color: darkgray;
-    box-sizing: border-box;
-    border-radius: 15px;
-    padding: 15px;
-    color: white;
+@import url('./reset.css');
+
+:root {
+    font-size: 16px;
+    --main-color: white;
 }
 
-.form input {
-    margin: 10px;
-    border: 2px solid white;
+.bg {
+    background-image: url('./images/Roses-iPhone-Wallpaper-Collection.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 320px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.568);
+    padding: 20px;
+    padding-top: 8%;
+    color: var(--main-color);
+    backdrop-filter: blur(15px);
+    font-family: sans-serif;
+}
+
+.login-form .input {
+    border: 2px solid var(--main-color);
     border-radius: 5px;
+    height: 1.7rem;
+    background-color: transparent;
 }
-h2, h4 {
+
+.login-form .input::placeholder {
+    color: var(--main-color);
+}
+
+.login-form * {
     margin: 10px;
 }
+
 .center {
     text-align: center;
 }
-.dawn {
-    margin-top: 150px;
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.8rem;
 }
-h2:first-child {
-    font-size: 24px;
+
+.login-form input[type="checkbox"] {
+    appearance: none;
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 0%;
+    background: linear-gradient(312deg, rgba(245, 162, 67, 1) 0%, rgba(238, 111, 193, 0.8382703423166141) 100%);;
+}
+
+.dawn {
+    margin-top: auto;
+}
+
+.login-header {
+    font-size: 1.5rem;
     font-weight: 600;
 }
-button {
-    background-color: darkorange;
-    border: 2px solid darkorange;
-    border-radius: 5px;
-    line-height: 2em;
+.text {
+    font-size: 0.8rem;
 }
-input {
-    background-color: darkorange;
+.logbut {
+    background: linear-gradient(312deg, rgba(245, 162, 67, 1) 0%, rgba(238, 111, 193, 0.8382703423166141) 100%);
+    border: none;
+    border-radius: 5px;
+    line-height: 2rem;
 }
