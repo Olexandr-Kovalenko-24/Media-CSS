@@ -8,7 +8,7 @@
 .bg {
     background-image: url('./images/Roses-iPhone-Wallpaper-Collection.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -32,14 +32,35 @@
 }
 
 .login-form .input {
-    border: 2px solid var(--main-color);
-    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.568);
+    border-radius: 8px;
     height: 1.7rem;
     background-color: transparent;
+    position: relative;
+}
+
+.login-form::before, .login-form::after {
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    content: '';
+    right: 42px;
+}
+
+.login-form::before {
+    top: 200px;
+    background-image: url('./images/account-outline.png'); 
+}
+
+.login-form::after {
+    top: 255px;
+    background-image: url('./images/eye-off-outline.png'); 
 }
 
 .login-form .input::placeholder {
     color: var(--main-color);
+    padding-left: 5%;
 }
 
 .login-form * {
@@ -66,6 +87,10 @@
     background: linear-gradient(312deg, rgba(245, 162, 67, 1) 0%, rgba(238, 111, 193, 0.8382703423166141) 100%);;
 }
 
+.login-form input[type="checkbox"]:checked {
+
+}
+
 .dawn {
     margin-top: auto;
 }
@@ -82,4 +107,15 @@
     border: none;
     border-radius: 5px;
     line-height: 2rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+a:last-child {
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.check-text {
+    margin: 0;
+    margin-left: 10px;
 }
