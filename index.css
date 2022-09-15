@@ -39,23 +39,24 @@
     position: relative;
 }
 
-.login-form::before, .login-form::after {
+.login-form::before,
+.login-form::after {
     position: absolute;
     display: inline-block;
     width: 24px;
     height: 24px;
     content: '';
-    right: 42px;
+    right: 3.2vw;
 }
 
 .login-form::before {
-    top: 200px;
-    background-image: url('./images/account-outline.png'); 
+    top: 30.5vh;
+    background-image: url('./images/account-outline.png');
 }
 
 .login-form::after {
-    top: 255px;
-    background-image: url('./images/eye-off-outline.png'); 
+    top: 38.7vh;
+    background-image: url('./images/eye-off-outline.png');
 }
 
 .login-form .input::placeholder {
@@ -81,14 +82,20 @@
 .login-form input[type="checkbox"] {
     appearance: none;
     margin: 0;
+    margin-right: 10px;
     width: 15px;
     height: 15px;
     border-radius: 0%;
-    background: linear-gradient(312deg, rgba(245, 162, 67, 1) 0%, rgba(238, 111, 193, 0.8382703423166141) 100%);;
+    position: relative;
+    background: linear-gradient(312deg, rgba(245, 162, 67, 1) 0%, rgba(238, 111, 193, 0.8382703423166141) 100%);
 }
 
-.login-form input[type="checkbox"]:checked {
-
+.login-form input[type="checkbox"]:checked::after {
+    content: "\1F5F8";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .dawn {
@@ -99,9 +106,11 @@
     font-size: 1.5rem;
     font-weight: 600;
 }
+
 .text {
     font-size: 0.8rem;
 }
+
 .logbut {
     background: linear-gradient(312deg, rgba(245, 162, 67, 1) 0%, rgba(238, 111, 193, 0.8382703423166141) 100%);
     border: none;
@@ -110,6 +119,7 @@
     color: var(--main-color);
     font-weight: 600;
 }
+
 a:last-child {
     font-weight: 600;
     margin-left: 5px;
