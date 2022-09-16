@@ -39,7 +39,7 @@
     position: relative;
 }
 
-.login-form::before,
+/* .login-form::before,
 .login-form::after {
     position: absolute;
     display: inline-block;
@@ -57,7 +57,7 @@
 .login-form::after {
     top: 38.7vh;
     background-image: url('./images/eye-off-outline.png');
-}
+} */
 
 .login-form .input::placeholder {
     color: var(--main-color);
@@ -92,10 +92,10 @@
 
 .login-form input[type="checkbox"]:checked::after {
     content: "\1F5F8";
-    color: red;
+    color: white;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 2px;
 }
 
 .dawn {
